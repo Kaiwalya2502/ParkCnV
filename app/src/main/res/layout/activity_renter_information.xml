@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".RenterInformation">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/big_shoulders_text"
+        android:gravity="center"
+        android:text="Details Please"
+        android:textColor="#000"
+        android:textSize="26sp" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/capture_parking_spot_image_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:backgroundTint="@color/buttonColor"
+        android:fontFamily="@font/alata_regulat"
+        android:padding="8dp"
+        android:text="Capture Car Image"
+        android:textSize="14sp" />
+    <EditText
+        android:id="@+id/renter_name_edit_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:fontFamily="@font/alata_regulat"
+        android:hint="Name"
+        android:padding="8dp" />
+    <EditText
+        android:id="@+id/renter_car_number_plate_edit_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:fontFamily="@font/alata_regulat"
+        android:hint="Number Plate"
+        android:padding="8dp" />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/car_model_edit_text"
+        android:layout_margin="10dp"
+        android:fontFamily="@font/alata_regulat"
+        android:padding="8dp"
+        android:hint="Car Model"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/driver_license_path"
+        android:layout_margin="10dp"
+        android:fontFamily="@font/alata_regulat"
+        android:textSize="14sp"
+        android:padding="8dp"/>
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Upload Driver License"
+        android:backgroundTint="@color/buttonColor"
+        android:padding="8dp"
+        android:layout_margin="10dp"
+        android:fontFamily="@font/alata_regulat"
+        android:id="@+id/upload_dl_button"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/rc_path"
+        android:layout_margin="10dp"
+        android:fontFamily="@font/alata_regulat"
+        android:textSize="14sp"
+        android:padding="8dp"/>
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/upload_rc_button"
+        android:backgroundTint="@color/buttonColor"
+        android:padding="8dp"
+        android:layout_margin="10dp"
+        android:text="Upload RC"
+        android:fontFamily="@font/alata_regulat"/>
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Proceed for Spot Booking"
+        android:id="@+id/proceed_to_renter_maps_activity_button"
+        android:padding="8dp"
+        android:layout_margin="10dp"
+        android:backgroundTint="@color/buttonColor"
+        android:fontFamily="@font/alata_regulat"
+        />
+
+
+
+</LinearLayout>

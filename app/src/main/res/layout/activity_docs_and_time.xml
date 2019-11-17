@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".DocsAndTime">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".DocsAndTime">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:gravity="center"
+            android:padding="8dp"
+            android:text="To ensure Smooth and Successful Transactions , We would need rental agreement or property ownership papers to prove validity of the Parking Spot \n Please Upload the Required Docs"
+            android:textColor="#000"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/file_name_for_rental_agreement"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:fontFamily="@font/alata_regulat"
+            android:padding="8dp"
+            android:textColor="#000"
+            android:textSize="16sp" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/accept_rental_agreement_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:backgroundTint="@color/buttonColor"
+            android:padding="8dp"
+            android:text="Select Rental Agreement" />
+
+        <TextView
+            android:id="@+id/file_path_for_noc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:fontFamily="@font/alata_regulat"
+            android:padding="8dp"
+            android:textColor="#000"
+            android:textSize="16sp" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/accept_noc_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:backgroundTint="@color/buttonColor"
+            android:padding="8dp"
+            android:text="Select NOC Certificate" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:padding="8dp"
+            android:text="Start Time for The Spot"
+            android:textColor="#000"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/start_time_for_spot"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:fontFamily="@font/alata_regulat"
+            android:gravity="center"
+            android:hint="HH:MM"
+            android:textColor="#000"
+            android:textColorHint="#000"
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:padding="8dp"
+            android:text="End Time for The Spot"
+            android:textColor="#000"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/end_time_for_spot"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:fontFamily="@font/alata_regulat"
+            android:gravity="center"
+            android:hint="HH:MM"
+            android:textColor="#000"
+            android:textColorHint="#000"
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:gravity="center"
+            android:padding="8dp"
+            android:text="Select Additional Features in the parking lot"
+            android:textColor="#000"
+            android:textSize="18sp" />
+
+
+        <CheckBox
+            android:id="@+id/feature1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:fontFamily="@font/alata_regulat"
+            android:padding="8dp"
+            android:text="Multiple Security Guards"
+            android:textColor="#000"
+            android:textSize="16sp" />
+
+        <CheckBox
+            android:id="@+id/feature2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:fontFamily="@font/alata_regulat"
+            android:padding="8dp"
+            android:text="CCTV cameras"
+            android:textColor="#000"
+            android:textSize="16sp" />
+
+        <CheckBox
+            android:id="@+id/feature3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:fontFamily="@font/alata_regulat"
+            android:padding="8dp"
+            android:text="Car Wash Service"
+            android:textColor="#000"
+            android:textSize="16sp" />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Set Price per hour"
+            android:fontFamily="@font/alata_regulat"
+            android:textColorHint="#000"
+            android:gravity="center"
+            android:inputType="number"
+            android:padding="8dp"
+            android:layout_margin="10dp"
+            />
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/all_done_button"
+            android:padding="8dp"
+            android:layout_margin="10dp"
+            android:text="Complete"
+            android:fontFamily="@font/alata_regulat"
+            android:backgroundTint="@color/buttonColor"/>
+
+    </LinearLayout>
+</ScrollView>

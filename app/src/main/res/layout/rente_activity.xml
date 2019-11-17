@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    tools:context=".MainActivity"
+    tools:scrollbars="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#fff"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/big_shoulders_text"
+            android:gravity="center"
+            android:text="Details Please"
+            android:textColor="#000"
+            android:textSize="26sp" />
+
+        <fragment
+            android:id="@+id/map"
+            android:name="com.google.android.gms.maps.SupportMapFragment"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:layout_margin="12dp"
+            tools:context=".MapsActivity" />
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/capture_parking_spot_image_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:backgroundTint="@color/buttonColor"
+            android:fontFamily="@font/alata_regulat"
+            android:padding="8dp"
+            android:text="Capture Parking Spot Image"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/rente_name_edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:fontFamily="@font/alata_regulat"
+            android:hint="Name"
+            android:padding="8dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:fontFamily="@font/alata_regulat"
+            android:padding="8dp"
+            android:text="Select Start Date"
+            android:textColor="#000" />
+
+        <EditText
+            android:id="@+id/spot_available_start_date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:fontFamily="@font/alata_regulat"
+            android:hint="DD/MM/YYYY"
+            android:padding="8dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:fontFamily="@font/alata_regulat"
+            android:padding="8dp"
+            android:text="Select End Date"
+            android:textColor="#000" />
+
+        <EditText
+            android:id="@+id/spot_available_end_date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:fontFamily="@font/alata_regulat"
+            android:hint="DD/MM/YYYY"
+            android:padding="8dp" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="match_parent"
+            android:id="@+id/proceed_to_docs_and_time_details_button"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@color/buttonColor"
+            android:fontFamily="@font/alata_regulat"
+            android:padding="8dp"
+            android:text="Proceed to Upload Documents"
+            android:textColor="#000"
+            android:textSize="16sp" />
+
+
+    </LinearLayout>
+</ScrollView>

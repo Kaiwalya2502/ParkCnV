@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".renteComplete"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Thank you for Saving Us A Spot"
+        android:textSize="26sp"
+        android:textColor="#000"
+        android:gravity="center"
+        android:fontFamily="@font/alata_regulat"
+        android:padding="8dp"
+        android:layout_margin="10dp"/>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:src="@drawable/ic_check_circle_black_24dp"
+        android:padding="80sp"
+        android:layout_margin="10dp"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Your parking spot will be active within 2 hours of complete verification"
+        android:textSize="14sp"
+        android:textColor="#000"
+        android:fontFamily="@font/alata_regulat"
+        android:padding="8dp"
+        android:layout_margin="10dp"
+        android:gravity="center"/>
+
+</LinearLayout>
