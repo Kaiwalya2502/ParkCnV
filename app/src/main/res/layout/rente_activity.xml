@@ -39,7 +39,7 @@
             android:backgroundTint="@color/buttonColor"
             android:fontFamily="@font/alata_regulat"
             android:padding="8dp"
-            android:text="Capture Parking Spot Image"
+            android:text="Upload Parking Spot Image"
             android:textSize="14sp" />
 
         <EditText
