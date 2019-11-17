@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+<LinearLayout
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical">
@@ -20,8 +24,31 @@
         android:layout_height="300dp"
         android:layout_margin="12dp"
         tools:context=".RenterMaps" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/within_range"
+        android:text="Within Range"
+        android:gravity="center"
+        android:fontFamily="@font/alata_regulat"
+        android:textSize="14sp"
+        android:textColor="#000"
+        android:padding="8dp"
+        android:layout_margin="10dp"/>
+
+    <SeekBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:max="100"
+        android:min="5"
+        android:progress="1"
+        android:padding="8dp"
+        android:layout_margin="10dp"
+        android:id="@+id/SeekBar"/>
+
     <androidx.recyclerview.widget.RecyclerView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/spots_recycler_view"/>
 </LinearLayout>
+</ScrollView>

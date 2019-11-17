@@ -18,13 +18,15 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
     private ArrayList<Integer> spotImages = new ArrayList<>();
     private ArrayList<Float> spotDistances = new ArrayList<>();
     private ArrayList<Integer>spotPrices = new ArrayList<>();
+    private Context mContext ;
 
-
-    public RecyclerViewAdapter(RenterMaps renterMaps, ArrayList<String> spotNames, ArrayList<Integer> spotImages, ArrayList<Float> spotDistances, ArrayList<Integer> spotPrices) {
+    public RecyclerViewAdapter(RenterMaps renterMaps, ArrayList<String> spotNames, ArrayList<Integer> spotImages, ArrayList<Float> spotDistances, ArrayList<Integer> spotPrices , Context context) {
         this.spotPrices = spotPrices;
         this.spotDistances = spotDistances;
         this.spotImages = spotImages;
         this.spotNames = spotNames;
+        this.mContext = context;
+
     }
 
 
@@ -38,16 +40,19 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
     }
 
     @Override
-    public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
+    public void onBindViewHolder(@NonNull ViewHolder holder, final int position) {
         holder.spot_name.setText(spotNames.get(position));
         holder.parking_spot_image.setImageResource(spotImages.get(position));
-        holder.distance_from_destination.setText(""+spotDistances.get(position));
-        holder.price_for_the_spot.setText(""+spotPrices.get(position));
+        holder.distance_from_destination.setText(""+spotDistances.get(position)+" kms");
+        holder.price_for_the_spot.setText(""+spotPrices.get(position)+"/- per hour");
 
         holder.parking_spot_image.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                
+                Intent intent = new Intent(mContext,RenterBooking.class);
+                intent.putExtra("spot name",spotNames.get(position));
+                intent.putExtra("price",spotPrices.get(position));
+                mContext.startActivity(intent);
             }
         });
 
