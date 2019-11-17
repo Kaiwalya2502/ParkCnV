@@ -29,6 +29,7 @@
             android:layout_margin="10dp"
             android:fontFamily="@font/alata_regulat"
             android:padding="8dp"
+            android:text="No Rental Agreement Selected"
             android:textColor="#000"
             android:textSize="16sp" />
 
@@ -49,6 +50,7 @@
             android:fontFamily="@font/alata_regulat"
             android:padding="8dp"
             android:textColor="#000"
+            android:text="No NOC Selected"
             android:textSize="16sp" />
 
         <androidx.appcompat.widget.AppCompatButton

@@ -83,7 +83,6 @@ public class DocsAndTime extends AppCompatActivity {
             Uri uri = null;
             if (resultData != null) {
                 uri = resultData.getData();
-                Log.i("hello", "Uri: " + uri.toString());
                 rentalAgreementPath.setText(""+uri.toString());
 
             }
@@ -92,7 +91,6 @@ public class DocsAndTime extends AppCompatActivity {
             Uri uri = null;
             if (resultData != null) {
                 uri = resultData.getData();
-                Log.i("hello", "Uri: " + uri.toString());
                 nocPath.setText(""+uri.toString());
 
             }
